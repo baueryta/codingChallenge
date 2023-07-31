@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potentieller Kunde</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" sizes="25" href="images/logo_ottonova_bildmarke.png">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/logo_ottonova.jpg" alt="ottonova-logo"  height="40">
+    </div>
+    
+    <form>
+        <h1>Potentieller Kunde</h1>
+        <h3>Wie heißt du und wie alt bist du?</h3>
+        <div class="input-container">
+            <input type="text" id="name" value="" placeholder="Vorname" required>
+            <input type="text" id="surname" value="" placeholder="Nachname" required>
+            <input name="date_of_birth" type="text" placeholder="TT.MM.JJJJ" pattern="\d{2}[\.]\d{2}[\.]\d{4}" required>
+        </div>
+        <h3>Wie können wir dich kontaktieren?</h3>
+        <div class="input-container">
+            <input type="email" id="email" value="" placeholder="E-Mail" required>
+            <input type="tel" id="phone" value="" placeholder="Telefonnummer" required>
+        </div>
+        <div class="form-group professional-status-group">
+            <h3>Wie ist dein Berufsstatus?</h3>
+            <fieldset class="professional-status-container" style="border: none;">
+                <div class="form-element">
+                    <label class="radio-button" >
+                        Angestellt
+                        <input type="radio" name="employment" value="employed" checked required>
+                    </label>
+                </div>
+                <div class="form-element">
+                    <label class="radio-button" >
+                        Selbstständig
+                        <input type="radio" name="employment" value="self-employed"  required>
+                    </label>
+                </div>
+                <div class="form-element">
+                    <label class="radio-button" >
+                        Verbeamtet
+                        <input type="radio" name="employment" value="civil-servant"  required>
+                    </label>
+                </div>
+                <div class="form-element">
+                    <label class="radio-button" >
+                        Beamtenanwärter
+                        <input type="radio" name="employment" value="civil-servant-applicant" required>
+                    </label>
+                </div>
+                <div class="form-element">
+                    <label class="radio-button" >
+                        Studierend
+                        <input type="radio" name="employment" value="student" required>
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+        <h3>Geschlecht:</h3>
+        <div class="male">
+            <div class="body"> 
+                <div class="head body_element"> 
+                    
+                </div> 
+                <div class="upper_body"> 
+                    <div class="left_arm">
+                        <div class="left_arm_top body_element"></div>
+                        <div class="left_arm_bottom body_element"></div>
+                    </div> 
+                    <div class="torso body_element"></div> 
+                    <div class="right_arm">
+                        <div class="right_arm_top body_element"></div>
+                        <div class="right_arm_bottom body_element"></div>
+                    </div> 
+                </div> 
+                <div class="lower_body"> 
+                    <div class="left_leg body_element"></div> 
+                    <div class="right_leg body_element"></div> 
+                </div> 
+            </div>
+        </div>
+        </div>
+        <button class="submit-button" type="submit">Absenden</button>
+    </form>
+
+<script src="./script.js"></script>
+</body>
+</html>
